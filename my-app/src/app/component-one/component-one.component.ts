@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class ComponentOneComponent implements OnInit {
 
-  private pokemons: any = [];
+  pokemons: any = [];
 
   constructor() { }
 
