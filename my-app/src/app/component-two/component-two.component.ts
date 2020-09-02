@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-component-two',
@@ -8,13 +8,21 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class ComponentTwoComponent implements OnInit {
 
-  @Input() id: string;
+  // input
+  @Input() id: number;
   @Input() url: string;
   @Input() name: string;
   @Input() image: string;
 
+  // output
+  @Output() selected = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  whoIsThatPokemon(id: number): void {
+    this.selected.emit(id);
   }
 }
