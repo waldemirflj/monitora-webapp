@@ -1,1 +1,13 @@
-<p>component-one works!</p>
+<div class="pokedex">
+  <div *ngFor="let pokemon of pokemons; let i = index" class="pokemon">
+    <div>
+      <p>{{ pokemon.name }}</p>
+    </div>
+    <div>
+      <img [src]="pokemon.image" [alt]="pokemon.name">
+    </div>
+    <div>
+      <button type="button">saiba mais</button>
+    </div>
+  </div>
+</div>
