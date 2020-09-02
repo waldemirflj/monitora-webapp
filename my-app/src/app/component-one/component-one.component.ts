@@ -38,4 +38,10 @@ export class ComponentOneComponent implements OnInit {
         alert('Ops, algo deu errado...');
       });
   }
+
+  whoIsThatPokemon(id: number): void {
+    const [{ name }] = this.pokemons.filter(i => i.id === id);
+
+    alert(`Who's that Pokemon: ${name}`);
+  }
 }
