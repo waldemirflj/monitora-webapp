@@ -1,0 +1,26 @@
+.pokemon {
+  width: 160px;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+  margin-left: -1px;
+
+  div {
+    padding: 10px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    button {
+      padding: 5px;
+      border-radius: 4px;
+    }
+  }
+}
