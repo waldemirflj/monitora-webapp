@@ -1,13 +1,5 @@
 <div class="pokedex">
-  <div *ngFor="let pokemon of pokemons; let i = index" class="pokemon">
-    <div>
-      <p>{{ pokemon.name }}</p>
-    </div>
-    <div>
-      <img [src]="pokemon.image" [alt]="pokemon.name">
-    </div>
-    <div>
-      <button type="button">saiba mais</button>
-    </div>
+  <div *ngFor="let pokemon of pokemons; let i = index">
+    <app-component-two></app-component-two>
   </div>
 </div>
