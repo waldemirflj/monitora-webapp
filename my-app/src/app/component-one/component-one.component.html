@@ -1,5 +1,9 @@
 <div class="pokedex">
   <div *ngFor="let pokemon of pokemons; let i = index">
-    <app-component-two></app-component-two>
+    <app-component-two
+      [id]="pokemon.id"
+      [url]="pokemon.url"
+      [name]="pokemon.name"
+      [image]="pokemon.image"></app-component-two>
   </div>
 </div>
